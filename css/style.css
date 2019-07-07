@@ -1,0 +1,244 @@
+/*
+*
+*           LAYOUT
+*
+*/
+
+body{
+    margin:0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#menu li, #menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#logo{
+    display: inline-block;
+    font-size: 3em;
+}
+
+#entete{
+    width: 60%;
+    margin: auto;
+}
+
+#entete > div{
+    display: inline-block;
+}
+
+#nom_ec{
+    display: inline-block;
+    position: relative;
+    top: -50px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#block_menu{
+    background: #0c5970;
+    width: 100%;
+}
+
+#menu{
+    width: 90%;
+    margin: auto;
+}
+
+#menu > li{
+    display: inline-block;
+    width: 24%;
+    font-size: 0.9em;
+    text-align: center; 
+}
+
+#menu li a {
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    background-color: #0c5970;
+    transition: background-color 1s;
+}
+
+#menu li a:hover{
+    background-color: #708d93;
+    box-shadow: inset 0px -5px 0px 0px #f73805;
+}
+
+#myCarousel{
+    margin: 10px auto;
+    width: 70%;
+    text-align: center;
+}
+
+.carousel-caption{
+    color: #333;
+}
+
+.s_list{
+    z-index: 99;
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: -40px;
+    top: 40px;
+}
+
+.s_list li{
+    display: block;
+}
+
+#menu > li:hover ul{
+    display: block;
+}
+
+.elem:hover{
+    cursor: pointer;
+}
+
+/*texte sous les slider*/
+.flex-caption {
+ /* width: 95%;*/
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#page{
+    width: 90%;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+#les_articles ul li{
+    display: inline-block;
+    width: 30%;
+    margin: 15px 10px 0 1%;
+    padding-top: 5px;
+    
+}
+
+#les_articles ul li:nth-child(even), #arts_left ul li:nth-child(even){
+    border-top: 12px solid #0c5970;
+}
+
+#les_articles ul li:nth-child(odd), #arts_left ul li:nth-child(odd){
+    border-top: 12px solid #f73805;
+}
+
+#les_articles ul li:nth-child(even) p.tit, #arts_left ul li:nth-child(even) p.tit{
+    font-weight: bold;
+    color: #0c5970;
+    font-size: 1.3em;
+}
+
+#les_articles ul li:nth-child(odd) p.tit, #arts_left ul li:nth-child(odd) p.tit{
+    font-weight: bold;
+    color: #f73805;
+    font-size: 1.3em;
+}
+
+.img_mini{
+    width: 100%;
+    height: 200px;
+}
+
+.text_mini{
+    color: #333;
+    text-align: justify;
+}
+
+/*page catalogue formation*/
+
+#arts_left{
+    float: left;
+    width: 25%;
+    margin-right: 5%;
+}
+
+#arts_left ul li{
+    position: relative;
+}
+
+#arts_left .text_mini{
+    height: 0px;
+    position: absolute;
+    opacity: 0;
+    z-index: 90;
+    top: 200px;
+    background: rgb(0,0,0,0.8);
+    color: white;
+    padding: 2px 3px;
+    border-radius: 5px;
+    transition: top 2s;
+}
+
+#arts_left li:hover .text_mini{
+    top: 170px;
+    opacity: 1;
+    height: auto;
+}
+
+#les_formations{
+    float: right;
+    width: 70%;
+}
+
+.diplome ul{
+    margin-left: 20px;
+}
+
+.une_form a{
+    font-size: 1.2em;
+    color: #4a4545;
+}
+
+
+/*Page Formation*/
+#bt_ong{
+    padding-top: 15px;
+    text-align: right;
+}
+
+#bt_ong > div{
+    display: inline-block;
+}
+
+#formation{
+    float: right;
+    width: 70%;
+}
+
+.title{
+    font-weight: bold;
+    color : #f73805;
+}
+
+.li_form{
+    position: relative;
+    line-height: 25px;
+}
+.li_form:before {
+    position: absolute;
+    left: -15px;
+    top: 8px;
+    width: 7px;
+    height: 7px;
+    background-color: #FC4F00 /* AMETYS ("general.page.puce", MODELE_UJM_PUCE_COLOR) */;
+    content: " ";
+}
